@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b63ba5b-1acd-4a1b-967f-dd096b94bf20" name="更改" comment="first" />
+    <list default="true" id="5b63ba5b-1acd-4a1b-967f-dd096b94bf20" name="更改" comment="first-3">
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/mybatis/mapper/group_buy_activity_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/mybatis/mapper/group_buy_discount_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/IGroupBuyActivityDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/IGroupBuyDiscountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/po/GroupBuyActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/po/GroupBuyDiscount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/mybatis/mapper/frame_case_mapper.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,23 +56,79 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "F:/group-buy-market-mjx/group-buy-market-mjx-app/src/main/resources/mybatis/mapper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-app\src\main\resources\mybatis\mapper" />
+      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-app\src\test\java\org\example\test" />
+      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-infrastructure\src\main\java\org\example\infrastructure" />
+      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-infrastructure\src\main\java\org\example\infrastructure\dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GroupBuyDiscountDaoTest.test_queryGroupBuyDiscountList">
+    <configuration name="GroupBuyActivityDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-market-mjx-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.dao.GroupBuyActivityDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupBuyActivityDaoTest.test_queryGroupBuyActivityList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-market-mjx-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.dao.GroupBuyActivityDaoTest" />
+      <option name="METHOD_NAME" value="test_queryGroupBuyActivityList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupBuyDiscountDaoTest.test_queryGroupBuyDiscountList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-market-mjx-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.dao.GroupBuyDiscountDaoTest" />
+      <option name="METHOD_NAME" value="test_queryGroupBuyDiscountList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="group-buy-market-mjx-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Application" />
@@ -70,6 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GroupBuyDiscountDaoTest.test_queryGroupBuyDiscountList" />
+        <item itemvalue="JUnit.GroupBuyActivityDaoTest.test_queryGroupBuyActivityList" />
+        <item itemvalue="JUnit.GroupBuyActivityDaoTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739542972227</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first-3">
+      <option name="closed" value="true" />
+      <created>1739609092987</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739609092987</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +205,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="first-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="first-3" />
   </component>
 </project>
