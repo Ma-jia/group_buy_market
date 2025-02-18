@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b63ba5b-1acd-4a1b-967f-dd096b94bf20" name="更改" comment="first-5">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/model/valobj/DiscountTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/discount/AbstractDiscountCalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/discount/IDiscountCalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/discount/impl/MJCalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/discount/impl/NCalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/discount/impl/ZJCalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/discount/impl/ZKCalculateService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/model/valobj/GroupBuyActivityDiscountVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/model/valobj/GroupBuyActivityDiscountVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/trial/factory/DefaultActivityStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/trial/factory/DefaultActivityStrategyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/trial/node/EndNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/trial/node/EndNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/trial/node/MarketNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/activity/service/trial/node/MarketNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/adapter/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/adapter/repository/ActivityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/po/GroupBuyDiscount.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/po/GroupBuyDiscount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-types/src/main/java/org/example/types/enums/ResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-types/src/main/java/org/example/types/enums/ResponseCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -206,7 +221,7 @@
       <workItem from="1739671299654" duration="679000" />
       <workItem from="1739672848350" duration="265000" />
       <workItem from="1739692647075" duration="10669000" />
-      <workItem from="1739862895039" duration="709000" />
+      <workItem from="1739862895039" duration="6200000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -256,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739712998199</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="first-5">
+      <option name="closed" value="true" />
+      <created>1739863615191</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739863615191</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
