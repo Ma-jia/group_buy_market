@@ -18,12 +18,25 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+        </dependency>
         <!-- 系统模块 -->
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>group-buy-market-mjx-domain</artifactId>
         </dependency>
     </dependencies>
+
+
 
     <build>
         <finalName>group-buy-market-mjx-infrastructure</finalName>

@@ -4,17 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b63ba5b-1acd-4a1b-967f-dd096b94bf20" name="更改" comment="first-6">
-      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/mybatis/mapper/crowd_tags_detail_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/mybatis/mapper/crowd_tags_job_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/mybatis/mapper/crowd_tags_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/ICrowdTagsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/ICrowdTagsDetailDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/ICrowdTagsJobDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/po/CrowdTags.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/po/CrowdTagsDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/dao/po/CrowdTagsJob.java" afterDir="false" />
+    <list default="true" id="5b63ba5b-1acd-4a1b-967f-dd096b94bf20" name="更改" comment="first-7">
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/mybatis/config/RedisClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/mybatis/config/RedisClientConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/src/test/java/org/example/test/domain/tag/ITagServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/tag/adapter/repository/ITagRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/tag/model/entity/CrowdTagsJobEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/tag/service/ITagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/tag/service/TagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/adapter/repository/TagRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/redis/IRedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/redis/RedissonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/23b5510f-d164-4601-9317-5d883930df0a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/23b5510f-d164-4601-9317-5d883930df0a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/data/log/log_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/data/log/log_info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/yyy/adapter/repository/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/tag/adapter/repository/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/yyy/model/aggregate/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/tag/model/aggregate/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/yyy/model/entity/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/tag/model/entity/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/yyy/model/valobj/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/tag/model/valobj/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/yyy/service/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/tag/service/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-mjx-infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +90,8 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial.executor": "Run",
+    "JUnit.ITagServiceTest.test_get_tag_bitmap.executor": "Run",
+    "JUnit.ITagServiceTest.test_tag_job.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -86,46 +100,35 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/group-buy-market-mjx/group-buy-market-mjx-app/src/main/resources/mybatis/mapper",
+    "last_opened_file_path": "F:/group-buy-market-mjx/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/redis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "advanced.settings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-app\src\test\java\org\example\test" />
+      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-infrastructure\src\main\java\org\example\infrastructure\redis" />
+      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-app\src\main\resources\mybatis\config" />
+      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-domain\src\main\java\org\example\domain\tag\service" />
       <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-app\src\main\resources\mybatis\mapper" />
-      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-domain\src\main\java\org\example\domain\activity\service" />
-      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-types\src\main\java\org\example\types" />
-      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-infrastructure\src\main\java\org\example\infrastructure" />
+      <recent name="F:\group-buy-market-mjx\group-buy-market-mjx-infrastructure\src\main\java\org\example\infrastructure\dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.test.domain.tag" />
       <recent name="org.example.infrastructure.dao.po" />
       <recent name="org.example.domain.activity.model.valobj" />
       <recent name="org.example.domain.activity.service.node" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial">
-    <configuration name="GroupBuyActivityDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="group-buy-market-mjx-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test.dao" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.dao.GroupBuyActivityDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ITagServiceTest.test_tag_job">
     <configuration name="GroupBuyActivityDaoTest.test_queryGroupBuyActivityList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="group-buy-market-mjx-app" />
       <extension name="coverage">
@@ -174,6 +177,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ITagServiceTest.test_get_tag_bitmap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-market-mjx-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.domain.tag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test.domain.tag" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.domain.tag.ITagServiceTest" />
+      <option name="METHOD_NAME" value="test_get_tag_bitmap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ITagServiceTest.test_tag_job" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-market-mjx-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.domain.tag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test.domain.tag" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.domain.tag.ITagServiceTest" />
+      <option name="METHOD_NAME" value="test_tag_job" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="group-buy-market-mjx-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Application" />
@@ -183,10 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ITagServiceTest.test_tag_job" />
+        <item itemvalue="JUnit.ITagServiceTest.test_get_tag_bitmap" />
         <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial" />
         <item itemvalue="JUnit.GroupBuyDiscountDaoTest.test_queryGroupBuyDiscountList" />
         <item itemvalue="JUnit.GroupBuyActivityDaoTest.test_queryGroupBuyActivityList" />
-        <item itemvalue="JUnit.GroupBuyActivityDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +251,7 @@
       <workItem from="1739671299654" duration="679000" />
       <workItem from="1739672848350" duration="265000" />
       <workItem from="1739692647075" duration="10669000" />
-      <workItem from="1739862895039" duration="6792000" />
+      <workItem from="1739862895039" duration="14104000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -281,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739870230069</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="first-7">
+      <option name="closed" value="true" />
+      <created>1739870813573</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739870813573</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +348,28 @@
     <MESSAGE value="first-4" />
     <MESSAGE value="first-5" />
     <MESSAGE value="first-6" />
-    <option name="LAST_COMMIT_MESSAGE" value="first-6" />
+    <MESSAGE value="first-7" />
+    <option name="LAST_COMMIT_MESSAGE" value="first-7" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/adapter/repository/TagRepository.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/group-buy-market-mjx-infrastructure/src/main/java/org/example/infrastructure/adapter/repository/TagRepository.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/group-buy-market-mjx-domain/src/main/java/org/example/domain/tag/service/TagService.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

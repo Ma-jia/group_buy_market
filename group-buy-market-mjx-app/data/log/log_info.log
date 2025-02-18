@@ -12,3 +12,449 @@
 25-02-18.16:35:07.036 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":80.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
 25-02-18.16:35:07.047 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 25-02-18.16:35:07.051 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.19:40:18.947 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 22804 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.19:40:18.949 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.19:40:19.827 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.19:40:19.830 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.19:40:19.867 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-02-18.19:40:20.955 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tagService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.example.domain.tag.adapter.repository.ITagRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+25-02-18.19:40:20.971 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-02-18.19:40:20.997 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'org.example.domain.tag.adapter.repository.ITagRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.example.domain.tag.adapter.repository.ITagRepository' in your configuration.
+
+25-02-18.19:40:20.999 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@710c2b53] to prepare test instance [org.example.test.domain.tag.ITagServiceTest@77a0dd63]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tagService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.example.domain.tag.adapter.repository.ITagRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.example.domain.tag.adapter.repository.ITagRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 43 common frames omitted
+25-02-18.19:41:25.959 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 24688 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.19:41:25.961 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.19:41:26.732 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.19:41:26.734 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.19:41:26.772 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+25-02-18.19:41:27.893 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.19:41:28.368 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:41:28.452 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:41:29.861 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.19:41:29.925 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.385 seconds (JVM running for 5.338)
+25-02-18.19:41:30.412 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.19:41:30.744 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.19:41:30.902 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.19:41:30.910 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.19:41:39.942 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 23480 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.19:41:39.944 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.19:41:40.746 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.19:41:40.750 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.19:41:40.784 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-02-18.19:41:41.878 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.19:41:42.377 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:41:42.454 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:41:43.823 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.19:41:43.884 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.337 seconds (JVM running for 5.313)
+25-02-18.19:41:44.282 [main            ] INFO  ITagServiceTest        - xiaofuge 存在，预期结果为 true，测试结果:false
+25-02-18.19:41:44.284 [main            ] INFO  ITagServiceTest        - gudebai 不存在，预期结果为 false，测试结果:false
+25-02-18.19:44:38.798 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 16220 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.19:44:38.799 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.19:44:39.603 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.19:44:39.607 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.19:44:39.642 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-02-18.19:44:40.773 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.19:44:41.282 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:44:41.375 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:44:42.752 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.19:44:42.807 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.445 seconds (JVM running for 5.427)
+25-02-18.19:44:43.278 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.19:44:43.541 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.19:44:43.657 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.19:44:43.665 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.19:48:15.026 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 24836 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.19:48:15.027 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.19:48:15.845 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.19:48:15.849 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.19:48:15.888 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+25-02-18.19:48:17.016 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.19:48:17.505 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:48:17.605 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:48:18.937 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.19:48:18.994 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.378 seconds (JVM running for 5.335)
+25-02-18.19:48:19.420 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.19:48:19.689 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.19:48:19.801 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.19:48:19.824 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.19:49:30.672 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 24856 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.19:49:30.673 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.19:49:31.453 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.19:49:31.457 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.19:49:31.486 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-02-18.19:49:32.640 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.19:49:33.146 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:49:33.237 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:49:34.591 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.19:49:34.654 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.418 seconds (JVM running for 5.344)
+25-02-18.19:49:35.098 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.19:49:35.379 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.19:49:35.490 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.19:49:35.507 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.19:49:40.899 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 23692 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.19:49:40.901 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.19:49:41.774 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.19:49:41.777 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.19:49:41.812 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-02-18.19:49:43.231 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.19:49:43.727 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:49:43.816 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:49:45.411 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.19:49:45.481 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 5.174 seconds (JVM running for 6.688)
+25-02-18.19:49:45.986 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.19:49:46.264 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.19:49:46.388 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.19:49:46.405 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.19:50:26.417 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 12136 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.19:50:26.418 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.19:50:27.275 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.19:50:27.278 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.19:50:27.311 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-02-18.19:50:28.617 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.19:50:29.059 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:50:29.140 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:50:30.672 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.19:50:30.732 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.794 seconds (JVM running for 5.844)
+25-02-18.19:50:31.233 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.19:50:31.502 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.19:51:56.088 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.19:51:56.101 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.19:53:46.272 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 25200 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.19:53:46.273 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.19:53:47.071 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.19:53:47.074 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.19:53:47.108 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-02-18.19:53:48.265 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.19:53:48.743 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:53:48.837 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:53:50.234 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.19:53:50.280 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.421 seconds (JVM running for 5.374)
+25-02-18.19:53:50.666 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.19:53:50.920 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.19:53:51.031 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.19:53:51.035 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.19:54:28.437 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 25384 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.19:54:28.438 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.19:54:29.204 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.19:54:29.207 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.19:54:29.237 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-02-18.19:54:30.385 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.19:54:30.887 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:54:30.971 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.19:54:32.336 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.19:54:32.387 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.371 seconds (JVM running for 5.345)
+25-02-18.19:54:32.836 [main            ] INFO  ITagServiceTest        - xiaofuge 存在，预期结果为 true，测试结果:false
+25-02-18.19:54:32.837 [main            ] INFO  ITagServiceTest        - gudebai 不存在，预期结果为 false，测试结果:false
+25-02-18.20:08:08.728 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 23092 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.20:08:08.729 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.20:08:09.544 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.20:08:09.548 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.20:08:09.585 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-02-18.20:08:10.731 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.20:08:11.205 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:08:11.307 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:08:12.681 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.20:08:12.738 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.458 seconds (JVM running for 5.365)
+25-02-18.20:08:13.141 [main            ] INFO  ITagServiceTest        - xiaofuge 存在，预期结果为 true，测试结果:false
+25-02-18.20:08:13.144 [main            ] INFO  ITagServiceTest        - gudebai 不存在，预期结果为 false，测试结果:false
+25-02-18.20:08:25.669 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 15380 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.20:08:25.670 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.20:08:26.477 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.20:08:26.480 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.20:08:26.510 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-02-18.20:08:27.752 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.20:08:28.199 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:08:28.292 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:08:29.637 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.20:08:29.688 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.474 seconds (JVM running for 5.449)
+25-02-18.20:08:30.125 [main            ] INFO  TagService             - 人群标签批次任务 tagId:RQ_KJHKL98UU78H66554GFDV batchId:10001
+25-02-18.20:08:30.150 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.20:08:30.417 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.20:08:30.500 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.20:08:30.504 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.20:11:21.665 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 24744 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.20:11:21.667 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.20:11:22.444 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.20:11:22.447 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.20:11:22.479 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-02-18.20:11:23.604 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.20:11:24.070 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:11:24.146 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:11:25.491 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.20:11:25.552 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.319 seconds (JVM running for 5.342)
+25-02-18.20:11:25.932 [main            ] INFO  TagService             - 人群标签批次任务 tagId:RQ_KJHKL98UU78H66554GFDV batchId:10001
+25-02-18.20:11:25.955 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.20:11:26.220 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.20:11:26.342 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.20:11:26.364 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.20:14:26.279 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 25328 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.20:14:26.280 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.20:14:27.063 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.20:14:27.066 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.20:14:27.103 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-02-18.20:14:28.217 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.20:14:28.674 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:14:28.747 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:14:30.077 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.20:14:30.126 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.26 seconds (JVM running for 5.184)
+25-02-18.20:14:30.541 [main            ] INFO  TagService             - 人群标签批次任务 tagId:RQ_KJHKL98UU78H66554GFDV batchId:10001
+25-02-18.20:14:30.564 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.20:14:30.809 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.20:14:30.916 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.20:14:30.941 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.20:14:58.094 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 5300 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.20:14:58.095 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.20:14:58.807 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.20:14:58.809 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.20:14:58.843 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-02-18.20:14:59.954 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.20:15:00.400 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:15:00.477 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:15:01.813 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.20:15:01.862 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.179 seconds (JVM running for 5.132)
+25-02-18.20:15:02.249 [main            ] INFO  TagService             - 人群标签批次任务 tagId:RQ_KJHKL98UU78H66554GFDV batchId:10001
+25-02-18.20:15:02.282 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.20:15:02.535 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.20:15:02.610 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.20:15:02.614 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-18.20:19:28.114 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 22068 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.20:19:28.115 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.20:19:28.865 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.20:19:28.869 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.20:19:28.903 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-02-18.20:19:30.003 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.20:19:30.455 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:19:30.538 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:19:30.644 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tagService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tagRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stringRedisTemplate' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfigurationV2.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.StringRedisTemplate]: Factory method 'stringRedisTemplate' threw exception; nested exception is java.lang.NoSuchMethodError: 'void org.springframework.data.redis.core.mapping.RedisMappingContext.setKeySpaceResolver(org.springframework.data.keyvalue.core.mapping.KeySpaceResolver)'
+25-02-18.20:19:30.676 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-02-18.20:19:30.699 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.data.redis.core.mapping.RedisMappingContext.<init>(RedisMappingContext.java:83)
+
+The following method did not exist:
+
+    'void org.springframework.data.redis.core.mapping.RedisMappingContext.setKeySpaceResolver(org.springframework.data.keyvalue.core.mapping.KeySpaceResolver)'
+
+The calling method's class, org.springframework.data.redis.core.mapping.RedisMappingContext, was loaded from the following location:
+
+    jar:file:/D:/JIDEA/maven/mvn_resp/org/springframework/data/spring-data-redis/3.2.10/spring-data-redis-3.2.10.jar!/org/springframework/data/redis/core/mapping/RedisMappingContext.class
+
+The called method's class, org.springframework.data.redis.core.mapping.RedisMappingContext, is available from the following locations:
+
+    jar:file:/D:/JIDEA/maven/mvn_resp/org/springframework/data/spring-data-redis/3.2.10/spring-data-redis-3.2.10.jar!/org/springframework/data/redis/core/mapping/RedisMappingContext.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.springframework.data.redis.core.mapping.RedisMappingContext: file:/D:/JIDEA/maven/mvn_resp/org/springframework/data/spring-data-redis/3.2.10/spring-data-redis-3.2.10.jar
+    org.springframework.data.keyvalue.core.mapping.context.KeyValueMappingContext: file:/D:/JIDEA/maven/mvn_resp/org/springframework/data/spring-data-keyvalue/2.7.12/spring-data-keyvalue-2.7.12.jar
+    org.springframework.data.mapping.context.AbstractMappingContext: file:/D:/JIDEA/maven/mvn_resp/org/springframework/data/spring-data-commons/2.7.12/spring-data-commons-2.7.12.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.data.redis.core.mapping.RedisMappingContext
+
+25-02-18.20:19:30.703 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@402c4085] to prepare test instance [org.example.test.domain.tag.ITagServiceTest@6851b296]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tagService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tagRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stringRedisTemplate' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfigurationV2.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.StringRedisTemplate]: Factory method 'stringRedisTemplate' threw exception; nested exception is java.lang.NoSuchMethodError: 'void org.springframework.data.redis.core.mapping.RedisMappingContext.setKeySpaceResolver(org.springframework.data.keyvalue.core.mapping.KeySpaceResolver)'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tagRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stringRedisTemplate' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfigurationV2.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.StringRedisTemplate]: Factory method 'stringRedisTemplate' threw exception; nested exception is java.lang.NoSuchMethodError: 'void org.springframework.data.redis.core.mapping.RedisMappingContext.setKeySpaceResolver(org.springframework.data.keyvalue.core.mapping.KeySpaceResolver)'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stringRedisTemplate' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfigurationV2.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.StringRedisTemplate]: Factory method 'stringRedisTemplate' threw exception; nested exception is java.lang.NoSuchMethodError: 'void org.springframework.data.redis.core.mapping.RedisMappingContext.setKeySpaceResolver(org.springframework.data.keyvalue.core.mapping.KeySpaceResolver)'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 59 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.StringRedisTemplate]: Factory method 'stringRedisTemplate' threw exception; nested exception is java.lang.NoSuchMethodError: 'void org.springframework.data.redis.core.mapping.RedisMappingContext.setKeySpaceResolver(org.springframework.data.keyvalue.core.mapping.KeySpaceResolver)'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 75 common frames omitted
+Caused by: java.lang.NoSuchMethodError: 'void org.springframework.data.redis.core.mapping.RedisMappingContext.setKeySpaceResolver(org.springframework.data.keyvalue.core.mapping.KeySpaceResolver)'
+	at org.springframework.data.redis.core.mapping.RedisMappingContext.<init>(RedisMappingContext.java:83)
+	at org.springframework.data.redis.core.mapping.RedisMappingContext.<init>(RedisMappingContext.java:70)
+	at org.springframework.data.redis.hash.ObjectHashMapper.<init>(ObjectHashMapper.java:106)
+	at org.springframework.data.redis.hash.ObjectHashMapper.<init>(ObjectHashMapper.java:82)
+	at org.springframework.data.redis.hash.ObjectHashMapper.getSharedInstance(ObjectHashMapper.java:131)
+	at org.springframework.data.redis.core.RedisTemplate.<init>(RedisTemplate.java:116)
+	at org.springframework.data.redis.core.StringRedisTemplate.<init>(StringRedisTemplate.java:41)
+	at org.redisson.spring.starter.RedissonAutoConfiguration.stringRedisTemplate(RedissonAutoConfiguration.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 76 common frames omitted
+25-02-18.20:21:28.699 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 17.0.6 on LAPTOP-B7A8DH0P with PID 25176 (started by m'j'x in F:\group-buy-market-mjx\group-buy-market-mjx-app)
+25-02-18.20:21:28.700 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-02-18.20:21:29.473 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-18.20:21:29.476 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-18.20:21:29.507 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-02-18.20:21:30.596 [main            ] INFO  Version                - Redisson 3.26.0
+25-02-18.20:21:31.029 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:21:31.114 [redisson-netty-1-19] INFO  ConnectionsHolder      - 24 connections initialized for 192.168.247.131/192.168.247.131:6379
+25-02-18.20:21:32.477 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-18.20:21:32.528 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.239 seconds (JVM running for 5.158)
+25-02-18.20:21:32.935 [main            ] INFO  TagService             - 人群标签批次任务 tagId:RQ_KJHKL98UU78H66554GFDV batchId:10001
+25-02-18.20:21:32.964 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-18.20:21:33.217 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-18.20:21:33.352 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-18.20:21:33.357 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
